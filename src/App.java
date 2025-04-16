@@ -14,7 +14,7 @@ public class App {
             System.out.println("3. Leer un n y calcular la serie 1 + 1/2 + ... + 1/n");
             System.out.println("4. Invertir un numero entero");
             System.out.println("5. Sumar los digitos de un numero");
-            System.out.println("6. Calcular potencia de base^exponente");
+            System.out.println("6. Calcular potencia de base exponente");
             System.out.println("7. Calcular MCD de dos numeros");
             System.out.println("8. Calcular cociente mediante restas sucesivas");
             System.out.println("9. Multiplicacion mediante sumas sucesivas");
@@ -23,7 +23,7 @@ public class App {
             System.out.println("12. Imprimir serie Fibonacci hasta un limite");
             System.out.println("13. Calcular funcion de Ackermann");
             System.out.println("14. Salir");
-            System.out.print("Seleccione una opci\u00f3n: ");
+            System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
 
             switch (opcion) {
