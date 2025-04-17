@@ -1,12 +1,15 @@
 package ejercicios;
 
 public class ejercicio12 {
-    public static int fibonacci(int n) {
-        if (n == 0) {
+
+    public static int sumaMatriz(int[][] matriz, int fila, int columna) {
+        if (fila == matriz.length) {
             return 0;
-        } else if (n == 1) {
-            return 1;
         }
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        if (columna == matriz[fila].length) {
+            return sumaMatriz(matriz, fila + 1, 0);
+        }
+        return matriz[fila][columna] + sumaMatriz(matriz, fila, columna + 1);
     }
+
 }

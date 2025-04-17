@@ -1,14 +1,12 @@
 package ejercicios;
 
 public class ejercicio13 {
-
-    public static int funcionAckerman(int m, int n) {
-        if (m == 0) {
-            return n + 1;
-        } else if (n == 0) {
-            return funcionAckerman(m - 1, 1);
-        } else {
-            return funcionAckerman(m - 1, funcionAckerman(m, n - 1));
+    public static int fibonacci(int n) {
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
         }
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }

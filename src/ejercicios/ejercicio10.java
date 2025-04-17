@@ -2,10 +2,19 @@ package ejercicios;
 
 public class ejercicio10 {
 
-    public static int sumaDeVectores(int[] arreglo, int i) {
-        if (i == arreglo.length) {
+    public static int multiplicacionSucesiva(int a, int b) {
+        if (b == 0) {
             return 0;
+        } else if (b == 1) {
+            return a;
         }
-        return arreglo[i] + sumaDeVectores(arreglo, i + 1);
+
+        int total = a + multiplicacionSucesiva(a, b - 1);
+        ;
+
+        System.out.println("multiplicacionSucesiva(" + a + ", " + b + ") = " + a + " + "
+                + multiplicacionSucesiva(a, b - 1) + " = " + total);
+        return total;
     }
+
 }
